@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JStack Docs - Full-Stack Next.js & TypeScript Toolkit</title>
+  <script src="https://cdn.tailwindcss.com?v=4.0.0-alpha.2"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-900 min-h-screen">
+  <div class="flex flex-col md:flex-row">
+    <!-- Sidebar Navigation -->
+    <aside class="w-full md:w-64 bg-gray-50 border-r border-gray-200 md:min-h-screen">
+      <div class="p-4 border-b border-gray-200">
+        <div class="flex items-center">
+          <a href="/" class="flex items-center">
+            <svg width="148" height="186" viewBox="0 0 148 186" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-5 sm:size-6"><path d="M112.51 95.1057C113.233 55.1323 74 0.250061 74 0.250061C74 0.250061 37 55.3439 37 95.1057C37 160.583 74 185.25 74 185.25C74 185.25 111.326 160.583 112.51 95.1057Z" fill="#B36C06" fill-opacity="0.7"></path><path d="M148 74.25C148 47.0435 135.667 24.9167 135.667 24.9167C135.667 24.9167 61.6667 61.9167 61.6667 135.917C61.6667 155.775 74 185.25 74 185.25C74 185.25 148 148.25 148 74.25Z" fill="#FFB441" fill-opacity="0.7"></path><path d="M4.57764e-05 74.25C0.00012207 47.0435 12.3334 24.9167 12.3334 24.9167C12.3334 24.9167 86.3334 61.9167 86.3334 135.917C86.3334 155.775 74 185.25 74 185.25C74 185.25 -0.000167847 148.25 4.57764e-05 74.25Z" fill="#FFB441" fill-opacity="0.7"></path></svg>
+            <span class="text-xl font-bold">JStack</span>
+            <span class="ml-1 text-sm">Japanese docs</span>
+          </a>  
+        </div>
+      </div>
+      <nav class="p-4">
+        <ul>
+          <li class="mb-2">
+            <div class="flex items-center p-2 bg-gray-200 rounded">
+              <a href="#" class="block flex-grow font-medium">INTRODUCTION</a>
+            </div>
+            <ul class="pl-4 mt-1">
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">Why JStack</a>
+              </li>
+              <li class="mb-1">
+                <a href="#" class="block p-2 bg-blue-100 text-blue-800 rounded text-sm border-l-4 border-blue-500">Key Features</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mb-2">
+            <div class="flex items-center p-2 hover:bg-gray-200 rounded">
+              <a href="#" class="block flex-grow">GETTING STARTED</a>
+            </div>
+            <ul class="pl-4 mt-1">
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">First Steps</a>
+              </li>
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">Local Development</a>
+              </li>
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">Environment Variables</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mb-2">
+            <div class="flex items-center p-2 hover:bg-gray-200 rounded">
+              <a href="#" class="block flex-grow">BACKEND</a>
+            </div>
+            <ul class="pl-4 mt-1">
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">App Router</a>
+              </li>
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">Routers</a>
+              </li>
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">Procedures</a>
+              </li>
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">API Client</a>
+              </li>
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">Middleware</a>
+              </li>
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">WebSockets</a>
+              </li>
+              <li class="mb-1">
+                <a href="#" class="block p-2 hover:bg-gray-200 rounded text-sm">Performance</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 md:p-8 max-w-4xl mx-auto">
+      <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold">JStack Japanese Docs</h1>
+      </div>
+
+      <div class="prose max-w-none">
+        <h1 class="text-3xl font-bold mb-6">Key Features</h1>
+
+        <!-- Feature 1 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">1. Ultra fast & Lightweight</h2>
+          <p class="mb-4">
+            Built on top of Hono's lightweight <a href="https://hono.dev/docs/concepts/routers#regexprouter" class="text-blue-600 hover:underline">RegExpRouter</a> and <a href="https://orm.drizzle.team/" class="text-blue-600 hover:underline">Drizzle ORM</a>, which, unlike Prisma, does not ship a massive query engine, JStack is fast. With a single click, you can deploy your Next.js server to globally distributed Cloudflare workers for maximum performance.
+          </p>
+          <p class="mb-4">
+            You can follow the Vercel pattern (coming soon) to get the same performance on Vercel, Netlify, Railway and other deployment platforms.
+          </p>
+          <hr class="my-6 border-t border-gray-200">
+        </section>
+
+        <!-- Feature 2 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">2. End-to-end Type-Safe</h2>
+          <p class="mb-4">
+            Type-safety is my favorite part about the <a href="https://create.t3.gg/" class="text-blue-600 hover:underline">T3 Stack</a>. The difference in JStack is that its client is not coupled to React Query hooks. In JStack you get a simple TypeScript client that you can use with any state manager you want:
+          </p>
+          
+          <div class="bg-gray-100 p-4 rounded-md mb-4">
+            <p class="text-sm text-gray-600 mb-2">app/page.tsx</p>
+            <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto">
+<code>const res = await client.post.recent.$get()
+const post = await res.json()
+// ^ automatically type-safe: { post: Post }</code></pre>
+          </div>
+          
+          <p class="mb-4">
+            Learn how to set up your lightweight, type-safe client in our <a href="/docs/getting-started/first-steps" class="text-blue-600 hover:underline">first steps</a>.
+          </p>
+          <hr class="my-6 border-t border-gray-200">
+        </section>
+
+        <!-- Feature 3 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">3. Highly Cost Effective</h2>
+          <p class="mb-4">
+            If you follow the <em>"intended way"</em> of deploying Next.js, you'll deploy your app to Vercel, Netlify, or similar and call it a day. With JStack, you can deploy your backend to Cloudflare Workers (or any other platform) with a single click, completely separate from your frontend.
+          </p>
+          <p class="mb-4">
+            Cloudflare Workers are also one of the <strong>cheapest</strong> (100K requests per day for free, no credit card required) and <strong>fastest</strong> ways to run your serverless code.
+          </p>
+          
+          <div class="bg-gray-100 p-4 rounded-md mb-4">
+            <p class="text-sm text-gray-600 mb-2">Terminal</p>
+            <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto"><code>npx wrangler deploy server/index.ts</code></pre>
+          </div>
+          
+          <p class="mb-4">
+            I have run entire software projects on Cloudflare's free plan, such as <a href="https://profanity.dev" class="text-blue-600 hover:underline">profanity.dev</a>. I think Cloudflare Workers is the most underrated computing platform in 2025 (this is not sponsored in <em>any</em> way).
+          </p>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
